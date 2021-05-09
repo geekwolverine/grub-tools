@@ -3,6 +3,7 @@ Operation = Install
 Operation = Remove
 Type = Package
 Target = linux
+Target = linux-amd
 Target = linux-lts
 Target = linux-lts??
 Target = linux-lts???
