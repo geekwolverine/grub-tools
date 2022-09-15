@@ -10,7 +10,7 @@ depends=(grub lsb-release)
 optdepends=(os-prober-btrfs)
 
 url=https://github.com/xerolinux/$pkgname
-_url="https://raw.githubusercontent.com/xerolinux/main/$pkgname"
+_url="https://raw.githubusercontent.com/xerolinux/$pkgname/main"
 
 source=(
   $_url/grub-install.hook
