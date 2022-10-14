@@ -2,8 +2,8 @@
 
 pkgname=grub-tools
 pkgdesc="Fixes, additions and enhancements to grub and os-prober."
-pkgver=1.6.6
-pkgrel=3
+pkgver=1.6.7
+pkgrel=1
 arch=('any')
 license=('GPL')
 depends=(grub lsb-release)
