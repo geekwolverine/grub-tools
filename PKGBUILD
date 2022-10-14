@@ -13,6 +13,7 @@ url=https://github.com/xerolinux/$pkgname
 _url="https://raw.githubusercontent.com/xerolinux/$pkgname/main"
 
 source=(
+  $_url/grub-snaps.hook
   $_url/grub-install.hook
   $_url/grub-kernel.hook
   $_url/grub-microcode.hook
@@ -28,6 +29,7 @@ package() {
   cd $srcdir
 
   install -d $pkgdir/usr/share/libalpm/hooks
+  install -Dm644 grub-snaps.hook   $pkgdir/usr/share/libalpm/hooks/grub-snaps.hook
   install -Dm644 grub-install.hook   $pkgdir/usr/share/libalpm/hooks/grub-install.hook
   install -Dm644 grub-kernel.hook   $pkgdir/usr/share/libalpm/hooks/grub-kernel.hook
   install -Dm644 grub-microcode.hook   $pkgdir/usr/share/libalpm/hooks/grub-microcode.hook
